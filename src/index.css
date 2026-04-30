@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg, #f6f5ff 0%, #ffffff 100%);
+  color: #222;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(780px, 100%);
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 24px 60px rgba(57, 63, 84, 0.12);
+}
+
+.card h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 2.6vw, 2.6rem);
+}
+
+.card p {
+  color: #57535a;
+  margin: 0 0 24px;
+}
+
+.registration-form {
+  display: grid;
+  gap: 18px;
+}
+
+.registration-form label {
+  display: grid;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d7d7e3;
+  border-radius: 14px;
+  font-size: 1rem;
+  background: #faf9ff;
+}
+
+.registration-form select {
+  appearance: none;
+}
+
+.checkbox-label {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.registration-form button {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background: #5c4dff;
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.registration-form button:disabled {
+  background: #b7b7d6;
+  cursor: not-allowed;
+}
+
+.registration-form button:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.preview-card {
+  margin-top: 28px;
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid #e7e4ff;
+  background: #fbf9ff;
+}
+
+.preview-card h2 {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+}
+
+.preview-card p {
+  margin: 10px 0;
+  color: #4b4b63;
+}
+
+.error-text {
+  margin: 0;
+  color: #d6336c;
+  font-size: 0.95rem;
+}
